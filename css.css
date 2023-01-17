@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@1,500&family=Montserrat:ital@1&family=Roboto:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Brygada+1918:ital@1&family=Nunito+Sans:ital,wght@1,300&display=swap');
+
+
+* {
+    margin: 0px;
+    /* padding: 0px; */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: blanchedalmond;
+}
+
+.page-container {
+    display: flex;
+    box-sizing: border-box;
+}
+
+/* NAVBAR */
+
+.navbar {
+    /* width: 14vw; */
+    /* height: 93vh; */
+    padding: 20px 0px;
+    background-color: rgb(233, 223, 223);
+    border: 2px solid black;
+    border-radius: 5px;
+
+}
+
+.navbar ul li {
+    list-style: none;
+    margin: 65px 0px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+    border-radius: 22px;
+    padding: 8px 25px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.navbar ul li a:hover {
+    color: white;
+    background-color: rgb(59, 47, 47);
+
+}
+
+/* HOME */
+
+.main {
+    width: 90vw;
+    height: 100vh;
+    /* background-color: blanchedalmond; */
+}
+
+.infocontainer {
+    background-color: rgb(182, 165, 139);
+    height: 78vh;
+    width: 80vw;
+    margin: 54px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 2px 5px 10px black;
+    flex-wrap: wrap;
+}
+
+.devinfo {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.hii {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 40px;
+    margin: 2px;
+}
+
+.name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 33px;
+    margin: 2px;
+}
+
+.about {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 20px;
+    margin: 2px;
+}
+
+.btn {
+    margin: 2px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.btn a {
+    text-decoration: none;
+    color: black;
+}
+
+.btn:hover {
+    background-color: rgb(59, 47, 47);
+    color: white;
+}
+.btn a:hover{
+    color: white;
+}
+
+.note {
+    font-family: 'Inconsolata', monospace;
+    font-size: 15px;
+    margin: 2px;
+
+}
+
+.devpic {
+    display: flex;
+}
+
+.devpic img {
+    height: 260px;
+    border-radius: 10px;
+}
+
+/* Contact CSS */
+
+.contact-form {
+    background-color: rgb(182, 165, 139);
+    /* height: 62vh; */
+    width: 74vw;
+    margin: 90px auto;
+    padding: 0px 45px;
+    padding-top: 75px;
+    box-shadow: 2px 5px 10px black;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form h1 {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.heading {
+    font-family: 'Noto Sans JP', sans-serif;
+    margin: 10px 0px;
+    font-size: 20px;
+}
+
+.tel {
+    font-family: 'Brygada 1918', serif;
+    /* font-family: 'Noto Sans JP', sans-serif; */
+    margin: 0px 25px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.mail {
+    font-family: 'Brygada 1918', serif;
+    text-decoration: none;
+}
+
+
+.social-account h1 {
+    font-size: 17px;
+}
+
+.social-account img {
+    height: 70px;
+    width: 70px;
+    margin: 15px;
+}
+
+/* Myinfo */
+
+.info {
+    background-color: rgb(182, 165, 139);
+    /* height: 62vh; */
+    width: 74vw;
+    margin: 90px auto;
+    padding: 0px 45px;
+    padding-top: 75px;
+    box-shadow: 2px 5px 10px black;
+    display: flex;
+    flex-direction: column;
+}
+
+.info h1 {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.info p {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.skillcontainer {
+    margin: 15px 15px;
+}
+
+.skillcontainer h2 {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.skillcontainer ul {
+    font-family: 'Noto Sans JP', sans-serif;
+    margin-top: 10px;
+}
+
+.skillcontainer ul li {
+    margin-top: 5px;
+}
+
+/* Hamburger */
+.hamburger {
+    position: absolute;
+    cursor: pointer;
+    display: none;
+}
+
+.ham {
+    width: 33px;
+    margin: 5px 5px;
+}
+
+
+/* MEDIA */
+
+@media (max-width: 1300px) {
+    * {
+        padding: 0px 0px;
+    }
+
+
+    .infocontainer {
+        height: auto;
+        width: auto;
+        margin: 50px auto;
+    }
+
+    .info {
+        margin-top: 50px;
+    }
+
+    .main {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .contact-form {
+        margin-top: 50px;
+    }
+
+    .social-account img {
+        height: 50px;
+        width: 50px;
+        margin: 5px;
+    }
+
+    .devpic img {
+        height: 275px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+
+    }
+
+    #navbargo {
+        display: none;
+    }
+
+    .hamburger {
+        position: absolute;
+        cursor: pointer;
+        display: block;
+        z-index: 1;
+    }
+
+    .ham {
+        width: 33px;
+        margin: 5px 5px;
+    }
+
+
+}
+
+@media (max-width:544px) {
+
+    .social-account img {
+        height: 30px;
+        width: 30px;
+    }
+
+}
+
+
+@media (max-width:299px) {
+    .social-account img {
+        margin: 0px;
+    }
+
+    .devpic img {
+        width: 150px;
+        height: 190px;
+    }
+
+    .mail {
+        margin-left: -40px;
+    }
+}
